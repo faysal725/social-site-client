@@ -1,0 +1,61 @@
+.titlePart{
+    background-color: rgb(7, 8, 68);
+    height: 800px;
+    width: 50%;
+    color:white;
+    text-align: left;
+}
+
+.titlePart h4{
+    font-weight: 500;
+}
+
+.titlePart h1{
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description{
+    padding-top: 40%;
+}
+
+.loginPart{
+    text-align: center;
+}
+
+.googleBtn{
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    border:none;
+    background-image: linear-gradient(55deg, rgba(255, 0, 0, 0.726), rgba(255, 255, 0, 0.63), rgba(0, 128, 0, 0.678), rgba(0, 0, 255, 0.726));
+    color: rgb(7, 8, 68);
+    font-weight: 600;
+}
+
+.googleBtn:hover{
+    background-image: linear-gradient(55deg, red, yellow, green, blue);
+    color:white;
+}
+
+.login{
+    padding-top: 25%;
+}
+
+
+.login input{
+    border-radius: 5px;
+    width: 50%;
+}
+
+
+.submitBtn{
+    background-color: rgb(7, 8, 68);
+    color: white;
+    height: 40px;
+    border: none;
+}
+
+.submitBtn:hover{
+    background-color: rgb(81, 83, 184);
+}

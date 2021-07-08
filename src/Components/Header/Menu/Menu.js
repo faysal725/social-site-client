@@ -11,10 +11,10 @@ import {
 const Menu = (props) => {
     
 
-    console.log(props)
+    // console.log(props)
     const {loggedUser, isLoggedIn, removeUser} = props
     const [loggedIn, setLoggedIn] = useState(false)
-    console.log(removeUser)
+    // console.log(removeUser)
     return (
         <Navbar bg="light" expand="md">
         <Container>

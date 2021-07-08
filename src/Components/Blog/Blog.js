@@ -11,7 +11,7 @@ const Blog = (props) => {
     // console.log(loggedUser[0].user)
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        const user = data.user
+        const user = loggedUser[0].user
         console.log(user)
         const post = data.post
         console.log(typeof(user), typeof(post))
@@ -36,9 +36,9 @@ const Blog = (props) => {
                             <div className="post">
                                 <h2><b>POST</b></h2>
                                 <form onSubmit={handleSubmit(onSubmit)}>
+                                
                                 <br /><br />
-                                <input className="emailSec" defaultValue={loggedUser[0].user || "none"} {...register("user", { required: true })} />
-                                <br /><br />
+                                <h6>Share Your Stories With Us</h6>
                                 <textarea className="storySec" placeholder='your stories' {...register("post", { required: true })} />
                                 <br /><br />
                                 {errors.exampleRequired && <span>This field is required</span>}

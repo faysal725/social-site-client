@@ -17,21 +17,21 @@ const LoginReducer = (state = initialState, action) => {
     switch(action.type){
         case ADD_USER:
             console.log(action)
-            const newUser = {
+            const newUser = [{
                 user: action.user,
                 isLoggedIn: true
-            }
+            }]
             // console.log(newUser)
-            const enteredUser= [newUser]
-            return {loggedUser: enteredUser}
+            console.log(state)
+            return {...state, loggedUser:newUser}
 
 
             case REMOVE_USER:
             console.log(action)
-            const removeUser = {user: "none", isLoggedIn: false};
+            const removeUser = [{user: "none", isLoggedIn: false}];
             console.log(removeUser)
-            const goneUser=[removeUser]
-            return {loggedUser: goneUser}
+            // const goneUser=[...state.loggedUser, removeUser]
+            return {...state, loggedUser:removeUser}
 
             case ADD_POST:
             console.log(action)
@@ -42,9 +42,9 @@ const LoginReducer = (state = initialState, action) => {
             }
             console.log(newPost)
             console.log(state)
-            const enterPost = [state, newPost]
+            const enterPost = [...state.userPost, newPost]
             console.log(enterPost)
-            return{...state}
+            return{...state, userPost:enterPost}
 
 
 
